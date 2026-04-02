@@ -1,0 +1,118 @@
+/* Reseta margens padrão e define fonte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* Fundo levemente acinzentado para o branco dos blocos saltar aos olhos */
+    background-color: #f4f4f4; 
+    color: #000000; /* Texto principal em Preto */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilo do Cabeçalho - Homenagem ao Santos com detalhe do YouTube */
+header {
+    background-color: #000000; /* Fundo Preto */
+    color: #ffffff; /* Texto Branco */
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 5px solid #ff0000; /* Linha de destaque Vermelha */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    color: #dddddd; /* Branco um pouco mais escuro para o subtítulo */
+    font-size: 1.1rem;
+}
+
+/* Estilo das Seções (Cards) */
+.card {
+    background: #ffffff; /* Fundo Branco (Santos) */
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 8px;
+    border-left: 6px solid #000000; /* Detalhe Preto na lateral */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card h2 {
+    color: #ff0000; /* Títulos em Vermelho (YouTube) */
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.card p {
+    margin-bottom: 25px;
+    color: #222222;
+    font-weight: 500;
+}
+
+/* Estilo do Botão de Inscrição - Clássico YouTube */
+.btn-inscrever {
+    display: inline-block;
+    background-color: #ff0000; /* Fundo Vermelho */
+    color: #ffffff; /* Texto Branco */
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 4px; /* Levemente arredondado, igual ao botão real do YT */
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border: 2px solid #ff0000;
+    transition: all 0.3s ease; /* Animação suave */
+}
+
+/* Efeito ao passar o mouse por cima do botão */
+.btn-inscrever:hover {
+    background-color: #ffffff; /* Fica Branco */
+    color: #ff0000; /* Texto Vermelho */
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3);
+    transform: translateY(-2px); /* Dá um leve pulinho para cima */
+}
+
+/* Torna os vídeos responsivos (adaptáveis a qualquer tela) */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 4px solid #000000; /* Moldura preta ao redor dos vídeos */
+    background-color: #000000; /* Fundo preto enquanto o vídeo carrega */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilo do Rodapé */
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    background-color: #000000; /* Fundo Preto */
+    color: #ffffff; /* Texto Branco */
+    border-top: 5px solid #ff0000; /* Linha Vermelha em cima */
+}
